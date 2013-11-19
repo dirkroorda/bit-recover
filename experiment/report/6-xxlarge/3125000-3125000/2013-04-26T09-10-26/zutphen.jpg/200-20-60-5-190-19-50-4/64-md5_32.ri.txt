@@ -1,0 +1,219 @@
+md5_32 (32 bits) [blocksize = 256 bytes] redundancy = 1 / 64
+block                    3 @     2049 operations: HIT! at distance 64
+block                   51 @        1 operations: HIT! at distance 1
+block                   61 @     2049 operations: HIT! at distance 64
+block                   93 @  3125515 operations: HIT  at distance 7
+block                   93 @  3125515 operations: HIT  at distance 135
+block                   93 @  3125515 operations: HIT? at distance 7 with ambival 21
+block                   96 @  3125515 operations: NOHITS
+block                   97 @   522496 operations: HIT! at distance 320
+block                  121 @   522496 operations: HIT! at distance 384
+block                  151 @  3125515 operations: NOHITS
+block                  159 @     4096 operations: HIT! at distance 128
+block                  167 @  3125515 operations: NOHITS
+block                  177 @     2049 operations: HIT! at distance 64
+block                  188 @     2049 operations: HIT! at distance 64
+block                  207 @   130752 operations: HIT! at distance 384
+block                  218 @        1 operations: HIT! at distance 2
+block                  258 @    32720 operations: HIT! at distance 192
+block                  259 @  3125515 operations: NOHITS
+block                  271 @  2087936 operations: HIT! at distance 320
+block                  279 @        1 operations: HIT! at distance 1
+block                  287 @  3125515 operations: NOHITS
+block                  289 @        1 operations: HIT! at distance 2
+block                  291 @     4096 operations: HIT! at distance 128
+block                  296 @        1 operations: HIT! at distance 1
+block                  321 @   130752 operations: HIT! at distance 256
+block                  323 @    65408 operations: HIT! at distance 384
+block                  331 @        1 operations: HIT! at distance 1
+block                  401 @   130752 operations: HIT! at distance 320
+block                  414 @  3125515 operations: NOHITS
+block                  433 @  2087936 operations: HIT! at distance 578
+block                  439 @    32720 operations: HIT! at distance 320
+block                  440 @  3125515 operations: NOHITS
+block                  448 @    65408 operations: HIT! at distance 320
+block                  477 @  3125515 operations: NOHITS
+block                  505 @    32720 operations: HIT! at distance 320
+block                  518 @    16368 operations: HIT! at distance 192
+block                  527 @  1044480 operations: HIT! at distance 384
+block                  534 @  3125515 operations: NOHITS
+block                  544 @  3125515 operations: NOHITS
+block                  549 @    32720 operations: HIT! at distance 192
+block                  555 @   130752 operations: HIT! at distance 320
+block                  619 @   522496 operations: HIT! at distance 384
+block                  620 @  2087936 operations: HIT! at distance 450
+block                  630 @  2087936 operations: HIT! at distance 512
+block                  634 @     2049 operations: HIT! at distance 64
+block                  637 @   261376 operations: HIT! at distance 448
+block                  651 @     2049 operations: HIT! at distance 64
+block                  658 @  3125515 operations: NOHITS
+block                  672 @     2049 operations: HIT! at distance 64
+block                  681 @  3125515 operations: HIT! at distance 386
+block                  690 @  2087936 operations: HIT! at distance 322
+block                  704 @        1 operations: HIT! at distance 1
+block                  753 @        1 operations: HIT! at distance 2
+block                  776 @  2087936 operations: HIT! at distance 450
+block                  778 @        1 operations: HIT! at distance 2
+block                  780 @    16368 operations: HIT! at distance 192
+block                  791 @   130752 operations: HIT! at distance 256
+block                  796 @  2087936 operations: HIT! at distance 384
+block                  805 @    16368 operations: HIT! at distance 256
+block                  845 @  3125515 operations: NOHITS
+block                  904 @  3125515 operations: NOHITS
+block                  908 @    65408 operations: HIT! at distance 256
+block                  930 @        1 operations: HIT! at distance 2
+block                  975 @  2087936 operations: HIT! at distance 578
+block                 1005 @   261376 operations: HIT! at distance 320
+block                 1057 @   522496 operations: HIT! at distance 320
+block                 1073 @        1 operations: HIT! at distance 2
+block                 1079 @     2049 operations: HIT! at distance 64
+block                 1082 @  3125515 operations: NOHITS
+block                 1111 @   522496 operations: HIT! at distance 448
+block                 1112 @   522496 operations: HIT! at distance 448
+block                 1139 @  3125515 operations: HIT! at distance 450
+block                 1187 @  3125515 operations: NOHITS
+block                 1206 @     2049 operations: HIT! at distance 64
+block                 1237 @  2087936 operations: HIT! at distance 386
+block                 1265 @   130752 operations: HIT! at distance 256
+block                 1273 @     2049 operations: HIT! at distance 64
+block                 1291 @  3125515 operations: NOHITS
+block                 1293 @     4096 operations: HIT! at distance 128
+block                 1304 @        1 operations: HIT! at distance 1
+block                 1363 @     4096 operations: HIT! at distance 128
+block                 1366 @  3125515 operations: NOHITS
+block                 1380 @     8188 operations: HIT! at distance 128
+block                 1425 @  1044480 operations: HIT! at distance 450
+block                 1472 @     2049 operations: HIT! at distance 64
+block                 1473 @        1 operations: HIT! at distance 1
+block                 1515 @  3125515 operations: NOHITS
+block                 1522 @    65408 operations: HIT! at distance 258
+block                 1527 @  3125515 operations: HIT! at distance 450
+block                 1561 @  3125515 operations: HIT! at distance 514
+block                 1568 @     2049 operations: HIT! at distance 64
+block                 1604 @        1 operations: HIT! at distance 1
+block                 1609 @  1044480 operations: HIT! at distance 130
+block                 1616 @  2087936 operations: HIT! at distance 449
+block                 1623 @  3125515 operations: NOHITS
+block                 1627 @   261376 operations: HIT! at distance 258
+block                 1637 @     2049 operations: HIT! at distance 64
+block                 1691 @    65408 operations: HIT! at distance 256
+block                 1726 @        1 operations: HIT! at distance 2
+block                 1746 @     8188 operations: HIT! at distance 128
+block                 1769 @  2087936 operations: HIT! at distance 384
+block                 1803 @        1 operations: HIT! at distance 1
+block                 1820 @  3125515 operations: NOHITS
+block                 1829 @    65408 operations: HIT! at distance 320
+block                 1833 @     4096 operations: HIT! at distance 128
+block                 1837 @   261376 operations: HIT! at distance 258
+block                 1845 @  3125515 operations: NOHITS
+block                 1847 @  3125515 operations: NOHITS
+block                 1863 @     8188 operations: HIT! at distance 192
+block                 1893 @   522496 operations: HIT! at distance 256
+block                 1895 @  3125515 operations: NOHITS
+block                 1902 @  1044480 operations: HIT! at distance 320
+block                 1905 @     8188 operations: HIT! at distance 192
+block                 1920 @   130752 operations: HIT! at distance 320
+block                 1922 @  3125515 operations: HIT! at distance 450
+block                 1957 @   522496 operations: HIT! at distance 448
+block                 1966 @     2049 operations: HIT! at distance 64
+block                 1970 @     4096 operations: HIT! at distance 128
+block                 2003 @     2049 operations: HIT! at distance 64
+block                 2005 @  3125515 operations: NOHITS
+block                 2018 @    32720 operations: HIT! at distance 256
+block                 2057 @        1 operations: HIT! at distance 2
+block                 2082 @    16368 operations: HIT! at distance 192
+block                 2116 @        1 operations: HIT! at distance 1
+block                 2126 @     2049 operations: HIT! at distance 64
+block                 2127 @        1 operations: HIT! at distance 1
+block                 2131 @     2049 operations: HIT! at distance 64
+block                 2138 @        1 operations: HIT! at distance 2
+block                 2165 @   522496 operations: HIT! at distance 384
+block                 2180 @  3125515 operations: NOHITS
+block                 2210 @  3125515 operations: HIT! at distance 384
+block                 2212 @  3125515 operations: NOHITS
+block                 2230 @  1044480 operations: HIT! at distance 448
+block                 2233 @    16368 operations: HIT! at distance 192
+block                 2245 @    65408 operations: HIT! at distance 320
+block                 2271 @  3125515 operations: NOHITS
+block                 2279 @  3125515 operations: NOHITS
+block                 2283 @    32720 operations: HIT! at distance 192
+block                 2297 @    16368 operations: HIT! at distance 192
+block                 2308 @     4096 operations: HIT! at distance 128
+block                 2327 @  3125515 operations: NOHITS
+block                 2331 @     2049 operations: HIT! at distance 64
+block                 2337 @        1 operations: HIT! at distance 1
+block                 2367 @    32720 operations: HIT! at distance 192
+block                 2389 @   130752 operations: HIT! at distance 320
+block                 2396 @  3125515 operations: HIT! at distance 450
+block                 2406 @  3125515 operations: HIT! at distance 448
+block                 2433 @  1044480 operations: HIT! at distance 384
+block                 2466 @  3125515 operations: NOHITS
+block                 2480 @     2049 operations: HIT! at distance 64
+block                 2503 @  3125515 operations: HIT! at distance 384
+block                 2507 @  1044480 operations: HIT! at distance 640
+block                 2540 @  2087936 operations: HIT  at distance 134
+block                 2540 @  2087936 operations: HIT  at distance 8
+block                 2540 @  2087936 operations: HIT? at distance 8 with ambival 25
+block                 2551 @     8188 operations: HIT! at distance 128
+block                 2565 @  3125515 operations: HIT! at distance 450
+block                 2569 @   130752 operations: HIT! at distance 320
+block                 2618 @     2049 operations: HIT! at distance 64
+block                 2666 @        1 operations: HIT! at distance 1
+block                 2686 @  3125515 operations: NOHITS
+block                 2689 @        1 operations: HIT! at distance 1
+block                 2690 @  3125515 operations: NOHITS
+block                 2696 @  3125515 operations: NOHITS
+block                 2715 @  3125515 operations: NOHITS
+block                 2717 @   261376 operations: HIT! at distance 256
+block                 2725 @  3125515 operations: NOHITS
+block                 2736 @   261376 operations: HIT! at distance 320
+block                 2737 @   522496 operations: HIT! at distance 450
+block                 2749 @  3125515 operations: NOHITS
+block                 2770 @  3125515 operations: NOHITS
+block                 2772 @  3125515 operations: NOHITS
+block                 2791 @  3125515 operations: NOHITS
+block                 2807 @  3125515 operations: HIT! at distance 514
+block                 2818 @    16368 operations: HIT! at distance 128
+block                 2823 @  1044480 operations: HIT! at distance 512
+block                 2829 @  2087936 operations: HIT! at distance 386
+block                 2867 @  3125515 operations: NOHITS
+block                 2870 @  3125515 operations: NOHITS
+block                 2877 @    16368 operations: HIT! at distance 192
+block                 2903 @   261376 operations: HIT! at distance 194
+block                 2919 @  3125515 operations: NOHITS
+block                 2925 @  2087936 operations: HIT! at distance 258
+block                 3007 @    32720 operations: HIT! at distance 192
+block                 3010 @   130752 operations: HIT! at distance 256
+block                 3018 @        1 operations: HIT! at distance 1
+block                 3021 @  3125515 operations: NOHITS
+block                 3047 @  3125515 operations: NOHITS
+block                 3070 @  3125515 operations: HIT! at distance 578
+block                 3077 @  3125515 operations: NOHITS
+block                 3089 @    65408 operations: HIT! at distance 256
+block                 3103 @   130752 operations: HIT! at distance 320
+block                 3110 @   522496 operations: HIT! at distance 512
+block                 3118 @        1 operations: HIT! at distance 1
+block                 3119 @     4096 operations: HIT! at distance 128
+block                 3137 @        1 operations: HIT! at distance 2
+block                 3161 @     2049 operations: HIT! at distance 64
+block                 3216 @   130752 operations: HIT! at distance 192
+block                 3219 @    32720 operations: HIT! at distance 256
+block                 3259 @        1 operations: HIT! at distance 2
+block                 3276 @  2087936 operations: HIT  at distance 8
+block                 3276 @  2087936 operations: HIT  at distance 136
+block                 3276 @  2087936 operations: HIT? at distance 8 with ambival 25
+block                 3316 @  3125515 operations: HIT! at distance 192
+block                 3330 @  1044480 operations: HIT! at distance 386
+block                 3348 @        1 operations: HIT! at distance 2
+block                 3388 @  3125515 operations: NOHITS
+block                 3399 @    32720 operations: HIT! at distance 192
+block                 3405 @        1 operations: HIT! at distance 2
+block                 3410 @   261376 operations: HIT! at distance 384
+block                 3423 @  3125515 operations: NOHITS
+block                 3460 @  3125515 operations: NOHITS
+block                 3526 @  2087936 operations: HIT! at distance 384
+block                 3539 @        1 operations: HIT! at distance 1
+block                 3551 @        1 operations: HIT! at distance 2
+block                 3557 @  3125515 operations: NOHITS
+block                 3566 @    65408 operations: HIT! at distance 320
+block                 3568 @     2049 operations: HIT! at distance 64

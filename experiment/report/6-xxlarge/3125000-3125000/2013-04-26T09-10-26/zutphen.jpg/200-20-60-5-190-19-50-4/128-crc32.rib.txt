@@ -1,0 +1,73 @@
+crc32 (32 bits) [blocksize = 512 bytes] redundancy = 1 / 128
+block                   48 @  3125002: HIT at distance 0
+block                   48 @  3125002: HIT at distance 2561
+block                   48 @  3125002: HIT? at distance 0 with ambival 0
+block                   83 @        4: HIT! at distance 256
+block                  118 @        2: HIT at distance 0
+block                  118 @        2: HIT at distance 129
+block                  118 @        2: HIT? at distance 0 with ambival 0
+block                  129 @    65536: HIT! at distance 2048
+block                  143 @     1024: HIT! at distance 1280
+block                  207 @      128: HIT! at distance 896
+block                  216 @     1024: HIT! at distance 1280
+block                  220 @      512: HIT! at distance 1152
+block                  310 @       64: HIT! at distance 769
+block                  422 @     1024: HIT! at distance 1280
+block                  452 @      512: HIT! at distance 1152
+block                  487 @      256: HIT! at distance 1024
+block                  541 @       64: HIT! at distance 768
+block                  618 @     8192: HIT! at distance 1664
+block                  683 @     2048: HIT! at distance 1408
+block                  706 @        2: HIT at distance 0
+block                  706 @        2: HIT at distance 129
+block                  706 @        2: HIT? at distance 0 with ambival 0
+block                  757 @      128: HIT! at distance 896
+block                  763 @      256: HIT! at distance 1024
+block                  780 @      256: HIT! at distance 1024
+block                  804 @       64: HIT! at distance 768
+block                  811 @     4096: HIT! at distance 1536
+block                  813 @      512: HIT! at distance 1152
+block                  903 @        2: HIT at distance 0
+block                  903 @        2: HIT at distance 129
+block                  903 @        2: HIT? at distance 0 with ambival 0
+block                  910 @      128: HIT! at distance 896
+block                  918 @    16384: HIT! at distance 1792
+block                  923 @     1024: HIT! at distance 1280
+block                  961 @     1024: HIT! at distance 1283
+block                  978 @        2: HIT! at distance 0
+block                 1090 @      256: HIT! at distance 1024
+block                 1106 @      512: HIT! at distance 1152
+block                 1107 @        2: HIT at distance 0
+block                 1107 @        2: HIT at distance 129
+block                 1107 @        2: HIT? at distance 0 with ambival 0
+block                 1110 @        2: HIT at distance 0
+block                 1110 @        2: HIT at distance 129
+block                 1110 @        2: HIT? at distance 0 with ambival 0
+block                 1135 @      128: HIT! at distance 896
+block                 1139 @      256: HIT! at distance 1024
+block                 1163 @      128: HIT! at distance 896
+block                 1198 @     1024: HIT! at distance 1280
+block                 1216 @        0: HIT! at distance 0
+block                 1233 @     1024: HIT! at distance 1280
+block                 1251 @       64: HIT! at distance 768
+block                 1270 @      256: HIT! at distance 1024
+block                 1282 @     2048: HIT! at distance 1408
+block                 1343 @  1048576: HIT! at distance 1152
+block                 1348 @     2048: HIT! at distance 1408
+block                 1357 @     1024: HIT! at distance 1280
+block                 1358 @        0: HIT! at distance 0
+block                 1362 @      512: HIT! at distance 1152
+block                 1368 @     8192: HIT! at distance 1664
+block                 1374 @      512: HIT! at distance 1152
+block                 1385 @   131072: HIT! at distance 896
+block                 1386 @      128: HIT! at distance 896
+block                 1395 @     8192: HIT! at distance 1664
+block                 1433 @     2048: HIT! at distance 1408
+block                 1451 @      256: HIT! at distance 1024
+block                 1459 @      512: HIT! at distance 1152
+block                 1462 @       16: HIT! at distance 512
+block                 1510 @     1024: HIT! at distance 1280
+block                 1535 @     1024: HIT! at distance 1280
+block                 1665 @      512: HIT! at distance 1152
+block                 1694 @    65536: HIT! at distance 1408
+block                 1730 @      256: HIT! at distance 1024

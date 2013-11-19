@@ -1,0 +1,9 @@
+        0.00 EXEC                  - executing [perl checksum.pl --task repair restore d...32-crc32.rib.txt zutphen.jpg-50-4.bu.chk]
+        0.10 REPAIR    32:crc32    - block frame width 6, max checksum distance 2, brute force 5000
+        5.83 REPAIR    32:crc32    - 78 ok (3 ambi), 138 failure, total 216, ambival 523000000 in [errorfile]
+        5.83 RESTORE   32:crc32    - block mask width 15, max checksum distance 2, brute force 5000
+        7.17 RESTORE   32:crc32    - 138 ok (6 ambi), 3 failure, total 141, ambival 200228 in [repairfile]
+        7.17 DIAG      32:crc32    - 216 blocks touched
+        7.18 DIAG      32:crc32    - 11 blocks incorrect
+        7.19 DIAG      32:crc32    - 11 problems diagnosed
+        7.19 EXEC                  - success [perl checksum.pl --task repair restore d...32-crc32.rib.txt zutphen.jpg-50-4.bu.chk]

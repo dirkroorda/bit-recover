@@ -1,0 +1,2 @@
+sha256 (256 bits) [blocksize = 1024 bytes] redundancy = 1 / 32
+I: all modified blocks are correct

@@ -1,0 +1,9 @@
+        0.00 EXEC                  - executing [perl checksum.pl --task repair restore d...8-md5_16.rib.txt zutphen.jpg-50-4.bu.chk]
+        0.08 REPAIR   128:md5_16   - block frame width 4, max checksum distance 1, brute force 5000
+        5.05 REPAIR   128:md5_16   - 160 ok (40 ambi), 46 failure, total 206, ambival 6220000057 in [errorfile]
+        5.05 RESTORE  128:md5_16   - block mask width 14, max checksum distance 1, brute force 5000
+        5.86 RESTORE  128:md5_16   - 58 ok (0 ambi), 28 failure, total 86, ambival 0 in [repairfile]
+        5.86 DIAG     128:md5_16   - 206 blocks touched
+        5.86 DIAG     128:md5_16   - 117 blocks incorrect
+        6.02 DIAG     128:md5_16   - 117 problems diagnosed
+        6.02 EXEC                  - success [perl checksum.pl --task repair restore d...8-md5_16.rib.txt zutphen.jpg-50-4.bu.chk]

@@ -1,0 +1,148 @@
+md5_16 (16 bits) [blocksize = 128 bytes] redundancy = 1 / 64
+block                   96 @        4: HIT at distance 0
+block                   96 @        4: HIT at distance 131
+block                   96 @        4: HIT? at distance 0 with ambival 0
+block                  193 @    16384: HIT at distance 0
+block                  193 @    16384: HIT at distance 897
+block                  193 @    16384: HIT at distance 512
+block                  193 @    16384: HIT? at distance 0 with ambival 0
+block                  194 @    25002: HIT at distance 0
+block                  194 @    25002: HIT at distance 513
+block                  194 @    25002: HIT at distance 576
+block                  194 @    25002: HIT? at distance 0 with ambival 0
+block                  334 @        0: HIT! at distance 0
+block                  377 @        0: HIT! at distance 0
+block                  574 @     4096: HIT at distance 0
+block                  574 @     4096: HIT at distance 769
+block                  574 @     4096: HIT? at distance 0 with ambival 0
+block                  583 @        8: HIT at distance 0
+block                  583 @        8: HIT at distance 192
+block                  583 @        8: HIT? at distance 0 with ambival 0
+block                  867 @     4096: HIT at distance 0
+block                  867 @     4096: HIT at distance 769
+block                  867 @     4096: HIT? at distance 0 with ambival 0
+block                  896 @      128: HIT at distance 0
+block                  896 @      128: HIT at distance 449
+block                  896 @      128: HIT? at distance 0 with ambival 0
+block                 1055 @      512: HIT at distance 0
+block                 1055 @      512: HIT at distance 577
+block                 1055 @      512: HIT? at distance 0 with ambival 0
+block                 1260 @     2048: HIT at distance 0
+block                 1260 @     2048: HIT at distance 705
+block                 1260 @     2048: HIT? at distance 0 with ambival 0
+block                 1268 @        0: HIT! at distance 0
+block                 1611 @        0: HIT! at distance 0
+block                 1817 @       64: HIT at distance 0
+block                 1817 @       64: HIT at distance 386
+block                 1817 @       64: HIT? at distance 0 with ambival 0
+block                 1950 @     1024: HIT at distance 0
+block                 1950 @     1024: HIT at distance 641
+block                 1950 @     1024: HIT? at distance 0 with ambival 0
+block                 2224 @     1024: HIT at distance 0
+block                 2224 @     1024: HIT at distance 641
+block                 2224 @     1024: HIT? at distance 0 with ambival 0
+block                 2412 @        0: HIT! at distance 0
+block                 2474 @    25002: HIT at distance 0
+block                 2474 @    25002: HIT at distance 961
+block                 2474 @    25002: HIT at distance 640
+block                 2474 @    25002: HIT at distance 641
+block                 2474 @    25002: HIT at distance 640
+block                 2474 @    25002: HIT? at distance 0 with ambival 0
+block                 2761 @        8: HIT at distance 0
+block                 2761 @        8: HIT at distance 193
+block                 2761 @        8: HIT? at distance 0 with ambival 0
+block                 2850 @     1024: HIT at distance 0
+block                 2850 @     1024: HIT at distance 641
+block                 2850 @     1024: HIT? at distance 0 with ambival 0
+block                 3136 @        8: HIT! at distance 0
+block                 3218 @      256: HIT at distance 0
+block                 3218 @      256: HIT at distance 513
+block                 3218 @      256: HIT? at distance 0 with ambival 0
+block                 3246 @    16384: HIT at distance 0
+block                 3246 @    16384: HIT at distance 897
+block                 3246 @    16384: HIT? at distance 0 with ambival 0
+block                 3666 @        0: HIT! at distance 0
+block                 3674 @     4096: HIT at distance 0
+block                 3674 @     4096: HIT at distance 769
+block                 3674 @     4096: HIT? at distance 0 with ambival 0
+block                 3786 @      128: HIT at distance 0
+block                 3786 @      128: HIT at distance 449
+block                 3786 @      128: HIT? at distance 0 with ambival 0
+block                 4036 @       32: HIT at distance 0
+block                 4036 @       32: HIT at distance 321
+block                 4036 @       32: HIT? at distance 0 with ambival 0
+block                 4165 @        0: HIT! at distance 0
+block                 4252 @        0: HIT! at distance 0
+block                 4330 @      512: HIT at distance 0
+block                 4330 @      512: HIT at distance 577
+block                 4330 @      512: HIT? at distance 0 with ambival 0
+block                 4361 @     2048: HIT at distance 0
+block                 4361 @     2048: HIT at distance 704
+block                 4361 @     2048: HIT? at distance 0 with ambival 0
+block                 4467 @        0: HIT! at distance 0
+block                 4491 @      256: HIT at distance 0
+block                 4491 @      256: HIT at distance 513
+block                 4491 @      256: HIT? at distance 0 with ambival 0
+block                 4542 @      512: HIT at distance 0
+block                 4542 @      512: HIT at distance 577
+block                 4542 @      512: HIT? at distance 0 with ambival 0
+block                 4594 @        0: HIT! at distance 0
+block                 4655 @      512: HIT at distance 0
+block                 4655 @      512: HIT at distance 577
+block                 4655 @      512: HIT? at distance 0 with ambival 0
+block                 4797 @        8: HIT at distance 0
+block                 4797 @        8: HIT at distance 195
+block                 4797 @        8: HIT? at distance 0 with ambival 0
+block                 4961 @        8: HIT at distance 0
+block                 4961 @        8: HIT at distance 194
+block                 4961 @        8: HIT? at distance 0 with ambival 0
+block                 5014 @     4096: HIT at distance 0
+block                 5014 @     4096: HIT at distance 769
+block                 5014 @     4096: HIT? at distance 0 with ambival 0
+block                 5102 @        0: HIT! at distance 0
+block                 5381 @     4096: HIT at distance 0
+block                 5381 @     4096: HIT at distance 769
+block                 5381 @     4096: HIT? at distance 0 with ambival 0
+block                 5430 @     4096: HIT at distance 0
+block                 5430 @     4096: HIT at distance 769
+block                 5430 @     4096: HIT? at distance 0 with ambival 0
+block                 5473 @       64: HIT at distance 0
+block                 5473 @       64: HIT at distance 385
+block                 5473 @       64: HIT? at distance 0 with ambival 0
+block                 5544 @     1024: HIT at distance 0
+block                 5544 @     1024: HIT at distance 641
+block                 5544 @     1024: HIT? at distance 0 with ambival 0
+block                 5583 @        0: HIT! at distance 0
+block                 5615 @      512: HIT at distance 0
+block                 5615 @      512: HIT at distance 577
+block                 5615 @      512: HIT? at distance 0 with ambival 0
+block                 5754 @        0: HIT! at distance 0
+block                 5838 @     2048: HIT at distance 0
+block                 5838 @     2048: HIT at distance 705
+block                 5838 @     2048: HIT? at distance 0 with ambival 0
+block                 5850 @       64: HIT at distance 0
+block                 5850 @       64: HIT at distance 385
+block                 5850 @       64: HIT? at distance 0 with ambival 0
+block                 6015 @        0: HIT! at distance 0
+block                 6043 @     8192: HIT at distance 0
+block                 6043 @     8192: HIT at distance 832
+block                 6043 @     8192: HIT? at distance 0 with ambival 0
+block                 6094 @     4096: HIT at distance 0
+block                 6094 @     4096: HIT at distance 769
+block                 6094 @     4096: HIT? at distance 0 with ambival 0
+block                 6154 @     8192: HIT at distance 0
+block                 6154 @     8192: HIT at distance 832
+block                 6154 @     8192: HIT? at distance 0 with ambival 0
+block                 6206 @      256: HIT at distance 0
+block                 6206 @      256: HIT at distance 513
+block                 6206 @      256: HIT? at distance 0 with ambival 0
+block                 6322 @        0: HIT! at distance 0
+block                 6798 @       16: HIT at distance 0
+block                 6798 @       16: HIT at distance 257
+block                 6798 @       16: HIT? at distance 0 with ambival 0
+block                 6821 @      512: HIT at distance 0
+block                 6821 @      512: HIT at distance 577
+block                 6821 @      512: HIT? at distance 0 with ambival 0
+block                 7053 @      128: HIT at distance 0
+block                 7053 @      128: HIT at distance 449
+block                 7053 @      128: HIT? at distance 0 with ambival 0

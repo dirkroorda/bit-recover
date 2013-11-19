@@ -1,0 +1,291 @@
+md5_16 (16 bits) [blocksize = 256 bytes] redundancy = 1 / 128
+block                    3 @     2049 operations: HIT  at distance 129
+block                    3 @     2049 operations: HIT  at distance 129
+block                    3 @     2049 operations: HIT  at distance 1
+block                    3 @     2049 operations: HIT? at distance 1 with ambival 3
+block                   61 @     2049 operations: HIT  at distance 129
+block                   61 @     2049 operations: HIT  at distance 1
+block                   61 @     2049 operations: HIT? at distance 1 with ambival 3
+block                   93 @     2049 operations: HIT! at distance 129
+block                   94 @     5002 operations: NOHITS
+block                   96 @     5002 operations: NOHITS
+block                   97 @     2049 operations: HIT! at distance 129
+block                  121 @     4096 operations: HIT  at distance 130
+block                  121 @     4096 operations: HIT  at distance 130
+block                  121 @     4096 operations: HIT? at distance 130 with ambival 260000000
+block                  151 @     4096 operations: HIT  at distance 130
+block                  151 @     4096 operations: HIT  at distance 130
+block                  151 @     4096 operations: HIT? at distance 130 with ambival 260000000
+block                  155 @        1 operations: HIT! at distance 1
+block                  159 @     4096 operations: HIT! at distance 256
+block                  167 @     4096 operations: HIT! at distance 256
+block                  177 @     2049 operations: HIT! at distance 128
+block                  188 @     2049 operations: HIT  at distance 1
+block                  188 @     2049 operations: HIT  at distance 129
+block                  188 @     2049 operations: HIT? at distance 1 with ambival 3
+block                  207 @     4096 operations: HIT  at distance 130
+block                  207 @     4096 operations: HIT  at distance 130
+block                  207 @     4096 operations: HIT? at distance 130 with ambival 260000000
+block                  246 @        1 operations: HIT! at distance 1
+block                  258 @     2049 operations: HIT! at distance 129
+block                  259 @     5002 operations: NOHITS
+block                  271 @     2049 operations: HIT  at distance 129
+block                  271 @     2049 operations: HIT  at distance 129
+block                  271 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                  287 @     5002 operations: NOHITS
+block                  291 @     4096 operations: HIT! at distance 256
+block                  321 @     5002 operations: NOHITS
+block                  323 @     4096 operations: HIT! at distance 257
+block                  396 @        1 operations: HIT! at distance 1
+block                  401 @     5002 operations: NOHITS
+block                  414 @     2049 operations: HIT! at distance 129
+block                  433 @     2049 operations: HIT! at distance 129
+block                  439 @     5002 operations: NOHITS
+block                  440 @     2049 operations: HIT! at distance 129
+block                  448 @     4096 operations: HIT! at distance 257
+block                  477 @     5002 operations: HIT! at distance 256
+block                  505 @     5002 operations: NOHITS
+block                  518 @     5002 operations: NOHITS
+block                  527 @     2049 operations: HIT! at distance 128
+block                  534 @     2049 operations: HIT! at distance 129
+block                  549 @     2049 operations: HIT! at distance 129
+block                  555 @     2049 operations: HIT! at distance 129
+block                  619 @     5002 operations: NOHITS
+block                  620 @     2049 operations: HIT! at distance 129
+block                  630 @     4096 operations: HIT  at distance 130
+block                  630 @     4096 operations: HIT  at distance 130
+block                  630 @     4096 operations: HIT  at distance 130
+block                  630 @     4096 operations: HIT? at distance 130 with ambival 390000000
+block                  634 @     2049 operations: HIT  at distance 1
+block                  634 @     2049 operations: HIT  at distance 129
+block                  634 @     2049 operations: HIT? at distance 1 with ambival 3
+block                  637 @     2049 operations: HIT  at distance 129
+block                  637 @     2049 operations: HIT  at distance 129
+block                  637 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                  647 @     2049 operations: HIT! at distance 129
+block                  651 @     2049 operations: HIT  at distance 1
+block                  651 @     2049 operations: HIT  at distance 129
+block                  651 @     2049 operations: HIT? at distance 1 with ambival 3
+block                  658 @     5002 operations: NOHITS
+block                  672 @     2049 operations: HIT! at distance 128
+block                  681 @     2049 operations: HIT! at distance 129
+block                  690 @     2049 operations: HIT  at distance 129
+block                  690 @     2049 operations: HIT  at distance 129
+block                  690 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                  743 @     2049 operations: HIT! at distance 129
+block                  776 @     5002 operations: NOHITS
+block                  780 @     5002 operations: NOHITS
+block                  783 @     2049 operations: HIT! at distance 129
+block                  791 @     5002 operations: NOHITS
+block                  796 @     5002 operations: NOHITS
+block                  805 @     5002 operations: NOHITS
+block                  845 @     2049 operations: HIT  at distance 129
+block                  845 @     2049 operations: HIT  at distance 1
+block                  845 @     2049 operations: HIT? at distance 1 with ambival 3
+block                  904 @     2049 operations: HIT! at distance 129
+block                  908 @     5002 operations: NOHITS
+block                  975 @     5002 operations: HIT! at distance 257
+block                  999 @        1 operations: HIT! at distance 1
+block                 1005 @     2049 operations: HIT! at distance 129
+block                 1057 @     2049 operations: HIT! at distance 129
+block                 1079 @     2049 operations: HIT! at distance 128
+block                 1082 @     2049 operations: HIT! at distance 129
+block                 1111 @     2049 operations: HIT! at distance 129
+block                 1112 @     5002 operations: NOHITS
+block                 1139 @     5002 operations: NOHITS
+block                 1187 @     2049 operations: HIT! at distance 129
+block                 1206 @     2049 operations: HIT! at distance 128
+block                 1237 @     4096 operations: HIT! at distance 256
+block                 1265 @     2049 operations: HIT! at distance 129
+block                 1273 @     2049 operations: HIT  at distance 1
+block                 1273 @     2049 operations: HIT  at distance 129
+block                 1273 @     2049 operations: HIT? at distance 1 with ambival 3
+block                 1293 @     2049 operations: HIT  at distance 129
+block                 1293 @     2049 operations: HIT  at distance 129
+block                 1293 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                 1363 @     4096 operations: HIT! at distance 256
+block                 1366 @     2049 operations: HIT! at distance 129
+block                 1380 @     4096 operations: HIT  at distance 130
+block                 1380 @     4096 operations: HIT  at distance 130
+block                 1380 @     4096 operations: HIT  at distance 130
+block                 1380 @     4096 operations: HIT? at distance 130 with ambival 390000000
+block                 1425 @     2049 operations: HIT! at distance 129
+block                 1472 @     2049 operations: HIT! at distance 128
+block                 1485 @     2049 operations: HIT! at distance 129
+block                 1515 @     2049 operations: HIT! at distance 129
+block                 1527 @     4096 operations: HIT! at distance 257
+block                 1561 @     2049 operations: HIT  at distance 129
+block                 1561 @     2049 operations: HIT  at distance 129
+block                 1561 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                 1568 @     2049 operations: HIT! at distance 128
+block                 1609 @     2049 operations: HIT! at distance 129
+block                 1623 @     4096 operations: HIT! at distance 257
+block                 1627 @     2049 operations: HIT! at distance 129
+block                 1637 @     2049 operations: HIT! at distance 128
+block                 1691 @     4096 operations: HIT! at distance 257
+block                 1716 @        1 operations: HIT! at distance 1
+block                 1746 @     5002 operations: NOHITS
+block                 1769 @     5002 operations: NOHITS
+block                 1785 @        1 operations: HIT! at distance 1
+block                 1820 @     5002 operations: NOHITS
+block                 1829 @     4096 operations: HIT  at distance 130
+block                 1829 @     4096 operations: HIT  at distance 130
+block                 1829 @     4096 operations: HIT? at distance 130 with ambival 260000000
+block                 1832 @     2049 operations: HIT! at distance 129
+block                 1833 @     2049 operations: HIT! at distance 129
+block                 1837 @     4096 operations: HIT  at distance 130
+block                 1837 @     4096 operations: HIT  at distance 2
+block                 1837 @     4096 operations: HIT? at distance 2 with ambival 6
+block                 1847 @     2049 operations: HIT! at distance 129
+block                 1863 @     2049 operations: HIT! at distance 129
+block                 1893 @     5002 operations: NOHITS
+block                 1895 @     4096 operations: HIT! at distance 257
+block                 1902 @     4096 operations: HIT! at distance 257
+block                 1905 @     5002 operations: NOHITS
+block                 1920 @     2049 operations: HIT! at distance 129
+block                 1922 @     4096 operations: HIT  at distance 130
+block                 1922 @     4096 operations: HIT  at distance 2
+block                 1922 @     4096 operations: HIT? at distance 2 with ambival 6
+block                 1954 @     2049 operations: HIT! at distance 129
+block                 1957 @     4096 operations: HIT! at distance 257
+block                 1966 @     2049 operations: HIT  at distance 1
+block                 1966 @     2049 operations: HIT  at distance 1
+block                 1966 @     2049 operations: HIT? at distance 1 with ambival 2000000
+block                 1970 @     4096 operations: HIT! at distance 256
+block                 1974 @     5002 operations: NOHITS
+block                 2003 @     2049 operations: HIT  at distance 1
+block                 2003 @     2049 operations: HIT  at distance 129
+block                 2003 @     2049 operations: HIT? at distance 1 with ambival 3
+block                 2005 @     4096 operations: HIT! at distance 257
+block                 2018 @     5002 operations: NOHITS
+block                 2020 @        1 operations: HIT! at distance 1
+block                 2066 @        1 operations: HIT! at distance 1
+block                 2067 @        1 operations: HIT! at distance 1
+block                 2082 @     4096 operations: HIT  at distance 130
+block                 2082 @     4096 operations: HIT  at distance 130
+block                 2082 @     4096 operations: HIT? at distance 130 with ambival 260000000
+block                 2126 @     2049 operations: HIT! at distance 128
+block                 2131 @     2049 operations: HIT! at distance 128
+block                 2165 @     5002 operations: NOHITS
+block                 2180 @     2049 operations: HIT  at distance 1
+block                 2180 @     2049 operations: HIT  at distance 129
+block                 2180 @     2049 operations: HIT? at distance 1 with ambival 3
+block                 2210 @     5002 operations: NOHITS
+block                 2212 @     4096 operations: HIT! at distance 257
+block                 2230 @     5002 operations: HIT! at distance 257
+block                 2233 @     5002 operations: NOHITS
+block                 2245 @     4096 operations: HIT! at distance 257
+block                 2271 @     4096 operations: HIT! at distance 257
+block                 2279 @     5002 operations: HIT  at distance 130
+block                 2279 @     5002 operations: HIT  at distance 130
+block                 2279 @     5002 operations: HIT? at distance 130 with ambival 260000000
+block                 2283 @     5002 operations: NOHITS
+block                 2296 @        1 operations: HIT! at distance 1
+block                 2297 @     2049 operations: HIT! at distance 129
+block                 2308 @     2049 operations: HIT! at distance 129
+block                 2327 @     4096 operations: HIT! at distance 257
+block                 2331 @     2049 operations: HIT  at distance 1
+block                 2331 @     2049 operations: HIT  at distance 129
+block                 2331 @     2049 operations: HIT? at distance 1 with ambival 3
+block                 2337 @        1 operations: HIT! at distance 1
+block                 2346 @        1 operations: HIT! at distance 1
+block                 2347 @        1 operations: HIT! at distance 1
+block                 2367 @     5002 operations: NOHITS
+block                 2387 @        1 operations: HIT! at distance 1
+block                 2389 @     4096 operations: HIT  at distance 130
+block                 2389 @     4096 operations: HIT  at distance 2
+block                 2389 @     4096 operations: HIT? at distance 2 with ambival 6
+block                 2396 @     4096 operations: HIT  at distance 130
+block                 2396 @     4096 operations: HIT  at distance 130
+block                 2396 @     4096 operations: HIT? at distance 130 with ambival 260000000
+block                 2406 @     2049 operations: HIT! at distance 129
+block                 2433 @     2049 operations: HIT  at distance 129
+block                 2433 @     2049 operations: HIT  at distance 129
+block                 2433 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                 2453 @        1 operations: HIT! at distance 1
+block                 2466 @     2049 operations: HIT  at distance 129
+block                 2466 @     2049 operations: HIT  at distance 129
+block                 2466 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                 2480 @     2049 operations: HIT  at distance 129
+block                 2480 @     2049 operations: HIT  at distance 1
+block                 2480 @     2049 operations: HIT  at distance 129
+block                 2480 @     2049 operations: HIT? at distance 1 with ambival 3
+block                 2503 @     2049 operations: HIT! at distance 129
+block                 2506 @     5002 operations: NOHITS
+block                 2507 @     5002 operations: NOHITS
+block                 2540 @     5002 operations: NOHITS
+block                 2551 @     2049 operations: HIT! at distance 129
+block                 2565 @     2049 operations: HIT! at distance 129
+block                 2569 @     4096 operations: HIT! at distance 257
+block                 2618 @     2049 operations: HIT  at distance 129
+block                 2618 @     2049 operations: HIT  at distance 1
+block                 2618 @     2049 operations: HIT? at distance 1 with ambival 3
+block                 2636 @        1 operations: HIT! at distance 1
+block                 2686 @     5002 operations: HIT! at distance 257
+block                 2690 @     5002 operations: NOHITS
+block                 2696 @     5002 operations: NOHITS
+block                 2715 @     5002 operations: NOHITS
+block                 2717 @     5002 operations: HIT! at distance 257
+block                 2725 @     5002 operations: NOHITS
+block                 2736 @     2049 operations: HIT! at distance 129
+block                 2737 @     2049 operations: HIT! at distance 129
+block                 2749 @     5002 operations: NOHITS
+block                 2770 @     4096 operations: HIT  at distance 130
+block                 2770 @     4096 operations: HIT  at distance 130
+block                 2770 @     4096 operations: HIT? at distance 130 with ambival 260000000
+block                 2772 @     5002 operations: NOHITS
+block                 2791 @     2049 operations: HIT  at distance 129
+block                 2791 @     2049 operations: HIT  at distance 129
+block                 2791 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                 2807 @     4096 operations: HIT! at distance 257
+block                 2810 @     2049 operations: HIT! at distance 129
+block                 2818 @     2049 operations: HIT  at distance 129
+block                 2818 @     2049 operations: HIT  at distance 129
+block                 2818 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                 2823 @     5002 operations: NOHITS
+block                 2829 @     4096 operations: HIT  at distance 130
+block                 2829 @     4096 operations: HIT  at distance 130
+block                 2829 @     4096 operations: HIT? at distance 130 with ambival 260000000
+block                 2867 @     5002 operations: NOHITS
+block                 2877 @     2049 operations: HIT! at distance 129
+block                 2884 @        1 operations: HIT! at distance 1
+block                 2903 @     5002 operations: HIT! at distance 257
+block                 2919 @     4096 operations: HIT! at distance 257
+block                 2925 @     2049 operations: HIT! at distance 129
+block                 2934 @     4096 operations: HIT! at distance 256
+block                 3007 @     5002 operations: NOHITS
+block                 3010 @     2049 operations: HIT! at distance 129
+block                 3021 @     2049 operations: HIT! at distance 129
+block                 3047 @     5002 operations: NOHITS
+block                 3070 @     2049 operations: HIT! at distance 129
+block                 3077 @     2049 operations: HIT! at distance 129
+block                 3089 @     2049 operations: HIT! at distance 129
+block                 3100 @     4096 operations: HIT! at distance 257
+block                 3103 @     2049 operations: HIT! at distance 129
+block                 3110 @     5002 operations: NOHITS
+block                 3119 @     2049 operations: HIT! at distance 129
+block                 3138 @     5002 operations: HIT! at distance 257
+block                 3161 @     2049 operations: HIT  at distance 129
+block                 3161 @     2049 operations: HIT  at distance 1
+block                 3161 @     2049 operations: HIT? at distance 1 with ambival 3
+block                 3216 @     4096 operations: HIT  at distance 130
+block                 3216 @     4096 operations: HIT  at distance 130
+block                 3216 @     4096 operations: HIT? at distance 130 with ambival 260000000
+block                 3219 @     2049 operations: HIT! at distance 129
+block                 3238 @     2049 operations: HIT  at distance 129
+block                 3238 @     2049 operations: HIT  at distance 129
+block                 3238 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                 3276 @     4096 operations: HIT! at distance 257
+block                 3316 @     2049 operations: HIT! at distance 128
+block                 3328 @     2049 operations: HIT! at distance 129
+block                 3330 @     2049 operations: HIT! at distance 129
+block                 3388 @     4096 operations: HIT! at distance 257
+block                 3399 @     2049 operations: HIT  at distance 129
+block                 3399 @     2049 operations: HIT  at distance 129
+block                 3399 @     2049 operations: HIT? at distance 129 with ambival 258000000
+block                 3410 @     2049 operations: HIT! at distance 129
+block                 3460 @     5002 operations: NOHITS
+block                 3526 @     4096 operations: HIT! at distance 257
+block                 3557 @     2049 operations: HIT! at distance 129
+block                 3566 @     2049 operations: HIT! at distance 129
+block                 3568 @     2049 operations: HIT! at distance 128

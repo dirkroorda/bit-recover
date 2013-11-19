@@ -1,0 +1,9 @@
+        0.00 EXEC                  - executing [perl checksum.pl --task repair restore d...2-sha256.rib.txt zutphen.jpg-50-4.bu.chk]
+        0.08 REPAIR    32:sha256   - block frame width 7, max checksum distance 16, brute force 625000
+    17:30    REPAIR    32:sha256   - 93 ok (0 ambi), 100 failure, total 193, ambival 0 in [errorfile]
+    17:30    RESTORE   32:sha256   - block mask width 19, max checksum distance 16, brute force 625000
+    18:19    RESTORE   32:sha256   - 100 ok (0 ambi), 0 failure, total 100, ambival 0 in [repairfile]
+    18:19    DIAG      32:sha256   - 193 blocks touched
+    18:19    DIAG      32:sha256   - 0 blocks incorrect
+    18:19    DIAG      32:sha256   - 0 problems diagnosed
+    18:19    EXEC                  - success [perl checksum.pl --task repair restore d...2-sha256.rib.txt zutphen.jpg-50-4.bu.chk]

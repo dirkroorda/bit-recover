@@ -1,0 +1,2 @@
+md5_64 (64 bits) [blocksize = 512 bytes] redundancy = 1 / 64
+I: all modified blocks are correct

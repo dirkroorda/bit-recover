@@ -1,5 +1,7 @@
-DESCRIPTION
-===========
+perfset.pl
+==========
+Description
+-----------
 Generates a test sets from a base file called dataname-orig in a root directory.
 The root directory and some other parameters are defined by the experiment.
 There are several experiments spelled out below, the first argument selects a specific one.
@@ -8,8 +10,8 @@ Each part correspondes to a checksum method such as md5 or sha256.
 Corruption is pseudo random, no two corruptions will be the same.
 From then on both parts will be subjected to checksum tests and error correcting.
 
-USAGE
-=====
+Usage
+-----
 Command::
 
 	./perfset.sh [-v] [-v] [-d] -e experiment [-tm timestamp]

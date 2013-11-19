@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>DESCRIPTION &mdash; bit-recover 1.0 documentation</title>
+    <title>checksum.pl &mdash; bit-recover 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="bit-recover 1.0 documentation" href="index.html" />
-    <link rel="next" title="DESCRIPTION" href="perfset.html" />
+    <link rel="next" title="perfset.pl" href="perfset.html" />
     <link rel="prev" title="Welcome to bit-recover’s documentation!" href="index.html" /> 
   </head>
   <body>
@@ -35,7 +35,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="perfset.html" title="DESCRIPTION"
+          <a href="perfset.html" title="perfset.pl"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="index.html" title="Welcome to bit-recover’s documentation!"
@@ -49,8 +49,10 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="description">
-<h1>DESCRIPTION<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="checksum-pl">
+<h1>checksum.pl<a class="headerlink" href="#checksum-pl" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
 <p>This tool is an instrument in bit preservation of (large) files.
 It is estimated that if one reads 10 TB from disk, 1 bit will be in error.
 Also, when 1 TB is stored for a year without touching it, some bits might
@@ -72,7 +74,7 @@ It works even when the checksums themselves are corrupt.</p>
 <p>It al depends on the damage being not too big.</p>
 </div>
 <div class="section" id="usage">
-<h1>USAGE<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <p>Call the script like this:</p>
 <div class="highlight-python"><pre>./checksum.pl [-v] [-m method] [-t task]* [--conf kind=path]* --data kind=path [backupfile] [origfile] [corruptfile]</pre>
 </div>
@@ -112,7 +114,7 @@ checksum length.</p>
 The kind part must occur as key in the <em>%files</em> hash.</p>
 </div>
 <div class="section" id="generating">
-<h1>GENERATING<a class="headerlink" href="#generating" title="Permalink to this headline">¶</a></h1>
+<h2>Generating<a class="headerlink" href="#generating" title="Permalink to this headline">¶</a></h2>
 <p>Command:</p>
 <div class="highlight-python"><pre>./checksum.pl file</pre>
 </div>
@@ -125,7 +127,7 @@ back.</p>
 <p>The file with checksums has the same name as the input file, but with <em>.chk</em> appended to it.</p>
 </div>
 <div class="section" id="verifying">
-<h1>VERIFYING<a class="headerlink" href="#verifying" title="Permalink to this headline">¶</a></h1>
+<h2>Verifying<a class="headerlink" href="#verifying" title="Permalink to this headline">¶</a></h2>
 <p>Command:</p>
 <div class="highlight-python"><pre>./checksum.pl -v file</pre>
 </div>
@@ -138,7 +140,7 @@ Such a record consists of just the block number, the given checksum, and the com
 <p>If there are no errors, the <em>file.x</em> will not be present. If it existed, it will be deleted.</p>
 </div>
 <div class="section" id="repairing">
-<h1>REPAIRING<a class="headerlink" href="#repairing" title="Permalink to this headline">¶</a></h1>
+<h2>Repairing<a class="headerlink" href="#repairing" title="Permalink to this headline">¶</a></h2>
 <p>Command:</p>
 <div class="highlight-python"><pre>./checksum.pl -c file</pre>
 </div>
@@ -156,7 +158,7 @@ The program will give clear warnings in these cases.</p>
 <p>The repair instructions are written to <em>file.ri</em></p>
 </div>
 <div class="section" id="restoring">
-<h1>RESTORING<a class="headerlink" href="#restoring" title="Permalink to this headline">¶</a></h1>
+<h2>Restoring<a class="headerlink" href="#restoring" title="Permalink to this headline">¶</a></h2>
 <p>Command:</p>
 <div class="highlight-python"><pre>./checksum.pl -r[a|A] file file-backup</pre>
 </div>
@@ -170,7 +172,7 @@ If called with -ra both the blocks for which repair found multiple hits and no h
 <p>The restore instructions are written <em>file.rib</em></p>
 </div>
 <div class="section" id="executing">
-<h1>EXECUTING<a class="headerlink" href="#executing" title="Permalink to this headline">¶</a></h1>
+<h2>Executing<a class="headerlink" href="#executing" title="Permalink to this headline">¶</a></h2>
 <p>Commands:</p>
 <div class="highlight-python"><pre>./checksum.pl -ec file
 ./checksum.pl -er file</pre>
@@ -180,7 +182,7 @@ All information needed from the backup file is already in the instruction file, 
 needed here. The work has been done in the previous steps, this step only performs the write actions in the file.</p>
 </div>
 <div class="section" id="diagnostics">
-<h1>DIAGNOSTICS<a class="headerlink" href="#diagnostics" title="Permalink to this headline">¶</a></h1>
+<h2>Diagnostics<a class="headerlink" href="#diagnostics" title="Permalink to this headline">¶</a></h2>
 <p>Command:</p>
 <div class="highlight-python"><pre>./checksum.pl -dia file backupfile origfile corruptfile</pre>
 </div>
@@ -191,7 +193,7 @@ On the basis of this information it shows which instructions helped to correctly
 and which instructions were faulty.</p>
 </div>
 <div class="section" id="author">
-<h1>AUTHOR<a class="headerlink" href="#author" title="Permalink to this headline">¶</a></h1>
+<h2>Author<a class="headerlink" href="#author" title="Permalink to this headline">¶</a></h2>
 <p>Dirk Roorda,
 <a class="reference external" href="http://www.dans.knaw.nl/en">Data Archiving and Networked Services (DANS)</a>
 2013-03-29
@@ -199,7 +201,7 @@ and which instructions were faulty.</p>
 <p>See also <a class="reference external" href="http://demo.datanetworkservice.nl/mediawiki/index.php/Bit_Rot_and_Recovery">DANS Lab Bit rot and recovery</a></p>
 </div>
 <div class="section" id="configuration">
-<h1>CONFIGURATION<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <p>In order to compare performance between md5 and sha256 hashing we provide two standard configurations, which can be
 invoked by the command line flag <tt class="docutils literal"><span class="pre">-m</span></tt>:</p>
 <div class="highlight-python"><pre>-m md5
@@ -211,9 +213,9 @@ by means of additional flags on the command line.</p>
 <p>The default checksum mode is sha256.</p>
 </div>
 <div class="section" id="implementation-details">
-<h1>IMPLEMENTATION DETAILS<a class="headerlink" href="#implementation-details" title="Permalink to this headline">¶</a></h1>
+<h2>Implementation details<a class="headerlink" href="#implementation-details" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="looking-for-hits">
-<h2>Looking for hits<a class="headerlink" href="#looking-for-hits" title="Permalink to this headline">¶</a></h2>
+<h3>Looking for hits<a class="headerlink" href="#looking-for-hits" title="Permalink to this headline">¶</a></h3>
 <p>When measuring how close a &#8220;hit&#8221; is to the actual situation, the number of different bits in the checksums
 and in the blocks are counted. However, differences in the checksum count much more than differences in the blocks.</p>
 <p>Bit differences in the checksums are far less probable than bit differences in the blocks, because blocks are larger.
@@ -226,7 +228,7 @@ We want a hit that is closest to the foreground, since the foreground has been a
 set the search parameters in such a way that the prescribed number of search operations will be used.</p>
 </div>
 <div class="section" id="binary-files-and-headers">
-<h2>Binary files and headers<a class="headerlink" href="#binary-files-and-headers" title="Permalink to this headline">¶</a></h2>
+<h3>Binary files and headers<a class="headerlink" href="#binary-files-and-headers" title="Permalink to this headline">¶</a></h3>
 <p>Every binary non-data file we read, is a file generated by this program. Such a file has a header.
 It will be read and written by the following two functions.
 It has the format:</p>
@@ -247,7 +249,7 @@ If both are powers of two but different, we are also stuck.
 Likewise, we choose between the values encountered for the checksummethod.</p>
 </div>
 <div class="section" id="reading-and-writing-files">
-<h2>Reading and Writing files<a class="headerlink" href="#reading-and-writing-files" title="Permalink to this headline">¶</a></h2>
+<h3>Reading and Writing files<a class="headerlink" href="#reading-and-writing-files" title="Permalink to this headline">¶</a></h3>
 <p>Opens files for reading, writing, and read-writing.
 Uses the specification created in the init() function.
 Returns a file handle in case of succes.
@@ -255,7 +257,7 @@ The file handle is meant to be stored in global variables.
 So more than one routine can easily read and write the same file.</p>
 </div>
 <div class="section" id="repair-block">
-<h2>REPAIR BLOCK<a class="headerlink" href="#repair-block" title="Permalink to this headline">¶</a></h2>
+<h3>Repair block<a class="headerlink" href="#repair-block" title="Permalink to this headline">¶</a></h3>
 <p>This function implements a main step: Repair a single block
 We apply ditherings progressively, in rounds corresponding to the frame length n of the dithering.
 We start with n = 0, then n = 1 and so on.
@@ -263,7 +265,7 @@ So the smaller disturbances will be checked first, and we assume that bigger dis
 If there are hits in a round, the next rounds will be skipped.</p>
 </div>
 <div class="section" id="restore-block">
-<h2>RESTORE BLOCK<a class="headerlink" href="#restore-block" title="Permalink to this headline">¶</a></h2>
+<h3>Restore block<a class="headerlink" href="#restore-block" title="Permalink to this headline">¶</a></h3>
 <p>now generate the set by creating all possible bit values at the positions where $str1 and $str2 differ
 in order to optimize the search process, we want to search in such a way that we do cases first where bits are taken
 consecutively from the data version or the backup version.
@@ -275,7 +277,7 @@ This will increase the change of finding a good restore.</p>
 So we should try bitstrings first with minimal alterations between 1s and 0s.</p>
 </div>
 <div class="section" id="dithering">
-<h2>Dithering<a class="headerlink" href="#dithering" title="Permalink to this headline">¶</a></h2>
+<h3>Dithering<a class="headerlink" href="#dithering" title="Permalink to this headline">¶</a></h3>
 <p>This is the technique used for repairing blocks.</p>
 <p>Dithering is subtly mangling a bit string, by introducing a limitied amount of bit errors.
 We let an imaginary frame of fixed width slide over the bitstring, and inside the frame
@@ -292,7 +294,7 @@ This is precisely because the end points are always one, and the endpoints chang
 <p>So the number of ditherings with frame length &lt;= n is:  2 ^ (n-1)</p>
 </div>
 <div class="section" id="masking">
-<h2>Masking<a class="headerlink" href="#masking" title="Permalink to this headline">¶</a></h2>
+<h3>Masking<a class="headerlink" href="#masking" title="Permalink to this headline">¶</a></h3>
 <p>This is the technique used for restoring blocks.
 When the corresponding block from the backup is fetched, and we have the data block,
 then in the most general case we do not know which block is right.
@@ -301,6 +303,7 @@ They could be both wrong. Even the checksums could be all wrong.</p>
 <p>So me make a mask of the differing bits, and we create all bit variations in that mask.</p>
 <p>We try them all out by brute force.</p>
 <p>So there is good chance that we find a hit, even if all initial data is corrupted.</p>
+</div>
 </div>
 </div>
 
@@ -312,24 +315,27 @@ They could be both wrong. Even the checksums could be all wrong.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">DESCRIPTION</a></li>
-<li><a class="reference internal" href="#usage">USAGE</a></li>
-<li><a class="reference internal" href="#generating">GENERATING</a></li>
-<li><a class="reference internal" href="#verifying">VERIFYING</a></li>
-<li><a class="reference internal" href="#repairing">REPAIRING</a></li>
-<li><a class="reference internal" href="#restoring">RESTORING</a></li>
-<li><a class="reference internal" href="#executing">EXECUTING</a></li>
-<li><a class="reference internal" href="#diagnostics">DIAGNOSTICS</a></li>
-<li><a class="reference internal" href="#author">AUTHOR</a></li>
-<li><a class="reference internal" href="#configuration">CONFIGURATION</a></li>
-<li><a class="reference internal" href="#implementation-details">IMPLEMENTATION DETAILS</a><ul>
+<li><a class="reference internal" href="#">checksum.pl</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#generating">Generating</a></li>
+<li><a class="reference internal" href="#verifying">Verifying</a></li>
+<li><a class="reference internal" href="#repairing">Repairing</a></li>
+<li><a class="reference internal" href="#restoring">Restoring</a></li>
+<li><a class="reference internal" href="#executing">Executing</a></li>
+<li><a class="reference internal" href="#diagnostics">Diagnostics</a></li>
+<li><a class="reference internal" href="#author">Author</a></li>
+<li><a class="reference internal" href="#configuration">Configuration</a></li>
+<li><a class="reference internal" href="#implementation-details">Implementation details</a><ul>
 <li><a class="reference internal" href="#looking-for-hits">Looking for hits</a></li>
 <li><a class="reference internal" href="#binary-files-and-headers">Binary files and headers</a></li>
 <li><a class="reference internal" href="#reading-and-writing-files">Reading and Writing files</a></li>
-<li><a class="reference internal" href="#repair-block">REPAIR BLOCK</a></li>
-<li><a class="reference internal" href="#restore-block">RESTORE BLOCK</a></li>
+<li><a class="reference internal" href="#repair-block">Repair block</a></li>
+<li><a class="reference internal" href="#restore-block">Restore block</a></li>
 <li><a class="reference internal" href="#dithering">Dithering</a></li>
 <li><a class="reference internal" href="#masking">Masking</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -339,7 +345,7 @@ They could be both wrong. Even the checksums could be all wrong.</p>
                         title="previous chapter">Welcome to bit-recover&#8217;s documentation!</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="perfset.html"
-                        title="next chapter">DESCRIPTION</a></p>
+                        title="next chapter">perfset.pl</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/checksum.txt"
@@ -369,7 +375,7 @@ They could be both wrong. Even the checksums could be all wrong.</p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="perfset.html" title="DESCRIPTION"
+          <a href="perfset.html" title="perfset.pl"
              >next</a> |</li>
         <li class="right" >
           <a href="index.html" title="Welcome to bit-recover’s documentation!"

@@ -1,0 +1,2 @@
+md5 (128 bits) [blocksize = 2048 bytes] redundancy = 1 / 128
+I: all modified blocks are correct

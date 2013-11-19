@@ -1,10 +1,12 @@
-DESCRIPTION
-===========
+gather.pl
+=========
+Description
+-----------
 
 Gather data from experiments
 
-USAGE
-=====
+Usage
+-----
 Command::
 
 	./gather.pl [-v] [--base reportbasedir]
