@@ -1,3 +1,6 @@
+![bit-recover-dirk](https://raw.github.com/dirkroorda/bit-recover/master/docs/Dirk-bu-104.jpg)
+![bit-recover-bit](https://raw.github.com/dirkroorda/bit-recover/master/docs/Checksumdiff-bu-104.jpg)
+
 bit-recover
 ===========
 recovery from bit rot by means of fine grained checksumming
