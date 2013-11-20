@@ -1,5 +1,5 @@
 ![bit-recover-dirk](https://raw.github.com/dirkroorda/bit-recover/master/docs/Dirk-bu-104.jpg)
-![bit-recover-bit](https://raw.github.com/dirkroorda/bit-recover/master/docs/Checksumdiff-bu-104.jpg)
+![bit-recover-bits](https://raw.github.com/dirkroorda/bit-recover/master/docs/Checksumdiff.jpg)
 
 bit-recover
 ===========
