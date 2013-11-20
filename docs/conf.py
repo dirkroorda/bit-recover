@@ -325,7 +325,7 @@ epub_copyright = u'2013, Dirk Roorda'
 #epub_max_image_width = 0
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
-#epub_show_urls = 'inline'
+epub_show_urls = 'footnote'
 
 # If false, no index is generated.
 #epub_use_index = True
