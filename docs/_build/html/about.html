@@ -66,37 +66,36 @@ But beware: the backup might have errors as well.
 Even the checksums themselves might have errors.
 Before we explain our strategy, here is an example that it actually works.</p>
 <p><strong>1. original</strong></p>
-<a class="reference internal image-reference" href="_images/Dirk-orig.jpg"><img alt="_images/Dirk-orig.jpg" src="_images/Dirk-orig.jpg" style="width: 200px;" /></a>
 <p>We start with a photo of the author. It is a 436 KB jpeg image. This is indeed the uncorrupted form.</p>
+<a class="reference internal image-reference" href="_images/Dirk-orig.jpg"><img alt="_images/Dirk-orig.jpg" src="_images/Dirk-orig.jpg" style="width: 200px;" /></a>
 <p><strong>2. 174 bit errors</strong></p>
-<a class="reference internal image-reference" href="_images/Dirk-174.jpg"><img alt="_images/Dirk-174.jpg" src="_images/Dirk-174.jpg" style="width: 200px;" /></a>
 <p>Now 174 bit errors are added, at random positions</p>
+<a class="reference internal image-reference" href="_images/Dirk-174.jpg"><img alt="_images/Dirk-174.jpg" src="_images/Dirk-174.jpg" style="width: 200px;" /></a>
 <p><strong>3. 104 errors in the backup</strong></p>
-<a class="reference internal image-reference" href="_images/Dirk-bu-1041.jpg"><img alt="_images/Dirk-bu-1041.jpg" src="_images/Dirk-bu-1041.jpg" style="width: 200px;" /></a>
 <p>We will also use a backup, but also this one is corrupted: 104 different errors</p>
+<a class="reference internal image-reference" href="_images/Dirk-bu-1041.jpg"><img alt="_images/Dirk-bu-1041.jpg" src="_images/Dirk-bu-1041.jpg" style="width: 200px;" /></a>
 <p><strong>4-5. 27 + 16 bit errors in the checksum files</strong></p>
-<img alt="_images/Checksumdiff1.jpg" src="_images/Checksumdiff1.jpg" />
 <p>We also corrupt the checksums: 27 bit errors</p>
 <img alt="_images/Dirk-chk-27.jpg" src="_images/Dirk-chk-27.jpg" />
+<img alt="_images/Checksumdiff1.jpg" src="_images/Checksumdiff1.jpg" />
 <p>and the checksums of the backup are not spared either: 16 bit errors</p>
 <img alt="_images/Dirk-bu-chk-16.jpg" src="_images/Dirk-bu-chk-16.jpg" />
 <p><strong>6. checking the corrupt image with the corrupt checksums</strong></p>
 <p>we get 163 damaged blocks</p>
 <img alt="_images/Checksumerrors.jpg" src="_images/Checksumerrors.jpg" />
 <p><strong>7. after repairing 138 and leaving 25 bit errors</strong></p>
+<p>First we try to repair without using the backup, we can repair the majority of damaged blocks, 138.</p>
 <a class="reference internal image-reference" href="_images/Dirk-25.jpg"><img alt="_images/Dirk-25.jpg" src="_images/Dirk-25.jpg" style="width: 200px;" /></a>
-<p>First we try to repair without using the backup, we can repair the majority of damaged blocks, 138.
-But 25 remain unrepaired.
-See the result.</p>
+<p>But 25 remain unrepaired. See the result.</p>
 <img alt="_images/Repairresults.jpg" src="_images/Repairresults.jpg" />
-<p><strong>8. We need to use the backup</strong></p>
 <p>Let us again check the checksums. 50 damaged blocks!
 But remember that the checksums themselves were faulty!</p>
 <img alt="_images/Recheck.jpg" src="_images/Recheck.jpg" />
+<p>Yet, by a combination of restoring and repairing it is effectively possible to correct all errors.</p>
+<p><strong>8. We need to use the backup</strong></p>
+<img alt="_images/Restoreresults.jpg" src="_images/Restoreresults.jpg" />
 <p><strong>9. fully restored, thank you</strong></p>
 <a class="reference internal image-reference" href="_images/Dirk-restored.jpg"><img alt="_images/Dirk-restored.jpg" src="_images/Dirk-restored.jpg" style="width: 200px;" /></a>
-<p>Yet, by a combination of restoring and repairing it is effectively possible to correct all errors.</p>
-<img alt="_images/Restoreresults.jpg" src="_images/Restoreresults.jpg" />
 <p><strong>10. There are absolutely no errors left</strong></p>
 <img alt="_images/Diff.jpg" src="_images/Diff.jpg" />
 </div>

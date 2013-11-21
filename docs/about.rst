@@ -18,32 +18,32 @@ Before we explain our strategy, here is an example that it actually works.
 
 **1. original**
 
+We start with a photo of the author. It is a 436 KB jpeg image. This is indeed the uncorrupted form.
+
 .. image:: /files/Dirk-orig.jpg
    :width: 200 px
 
-We start with a photo of the author. It is a 436 KB jpeg image. This is indeed the uncorrupted form.
-
 **2. 174 bit errors**
+
+Now 174 bit errors are added, at random positions
 
 .. image:: /files/Dirk-174.jpg
    :width: 200 px
 
-Now 174 bit errors are added, at random positions
-
 **3. 104 errors in the backup**
+
+We will also use a backup, but also this one is corrupted: 104 different errors
 
 .. image:: /files/Dirk-bu-104.jpg
    :width: 200 px
 
-We will also use a backup, but also this one is corrupted: 104 different errors
-
 **4-5. 27 + 16 bit errors in the checksum files**
-
-.. image:: /files/Checksumdiff.jpg
 
 We also corrupt the checksums: 27 bit errors 
 
 .. image:: /files/Dirk-chk-27.jpg
+
+.. image:: /files/Checksumdiff.jpg
 
 and the checksums of the backup are not spared either: 16 bit errors
 
@@ -57,30 +57,30 @@ we get 163 damaged blocks
 
 **7. after repairing 138 and leaving 25 bit errors**
 
+First we try to repair without using the backup, we can repair the majority of damaged blocks, 138.
+
 .. image:: /files/Dirk-25.jpg
    :width: 200 px
 
-First we try to repair without using the backup, we can repair the majority of damaged blocks, 138.
-But 25 remain unrepaired.
-See the result.
+But 25 remain unrepaired. See the result.
 
 .. image:: /files/Repairresults.jpg
-
-**8. We need to use the backup**
 
 Let us again check the checksums. 50 damaged blocks!
 But remember that the checksums themselves were faulty!
 
 .. image:: /files/Recheck.jpg
 
+Yet, by a combination of restoring and repairing it is effectively possible to correct all errors.
+
+**8. We need to use the backup**
+
+.. image:: /files/Restoreresults.jpg
+
 **9. fully restored, thank you**
 
 .. image:: /files/Dirk-restored.jpg
    :width: 200 px
-
-Yet, by a combination of restoring and repairing it is effectively possible to correct all errors.
-
-.. image:: /files/Restoreresults.jpg
 
 **10. There are absolutely no errors left**
 
