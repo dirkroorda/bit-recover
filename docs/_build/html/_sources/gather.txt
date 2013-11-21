@@ -1,12 +1,14 @@
+.. _gather.pl:
+
 gather.pl
-=========
+#########
 Description
------------
+===========
 
 Gather data from experiments
 
 Usage
------
+=====
 Command::
 
 	./gather.pl [-v] [--base reportbasedir]

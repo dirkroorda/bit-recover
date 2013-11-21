@@ -1,7 +1,9 @@
 bit-recover documentation
 =========================
-.. image:: Dirk-bu-104.jpg
-.. image:: Checksumdiff.jpg
+.. image:: /files/Dirk-bu-104.jpg
+   :width: 200 px
+.. image:: /files/Checksumdiff.jpg
+   :width: 400 px
 
 Contents:
 

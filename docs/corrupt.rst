@@ -1,7 +1,9 @@
+.. _corrupt.pl:
+
 corrupt.pl
-==========
+##########
 Description
------------
+===========
 Corrupts the file with (burst)bit errors.
 If level is given, it is the desired number of (burst)bit errors per TB.
 If number is given, it is the desired absolute number of bit errors.
@@ -14,7 +16,7 @@ The length of the burst is determined randomly and independently but stays below
 The value of the burst (zeroes or ones) will be determined randomly.
 
 Usage
------
+=====
 Command::
 
 	./corrupt.pl [-s] [-b nbits] [-l level | -n number] --data file*

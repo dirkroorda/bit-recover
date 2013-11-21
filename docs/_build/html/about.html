@@ -52,14 +52,77 @@
             
   <div class="section" id="about">
 <h1>ABOUT<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h1>
-<p>The idea of using checksums for error <strong>recovery</strong> is sketched in my <a class="reference external" href="http://demo.datanetworkservice.nl/mediawiki/index.php/Bit_Rot_and_Recovery">DANS Lab: Bit Rot and Recovery</a>.</p>
-<p>The code is here (Perl).</p>
+<div class="section" id="data-in-various-stages-of-decay-and-salvation">
+<h2>Data in various stages of decay and salvation<a class="headerlink" href="#data-in-various-stages-of-decay-and-salvation" title="Permalink to this headline">¶</a></h2>
+<p>When you store TeraBytes of data for many years, some bits in it will decay.
+It is hard to get figures about how much damage we can expect.
+But it might be in the order of a handful per TB per year.</p>
+<p>How do we recover from it? Here is an elegant method.
+Add some redundancy, in the form of checksums.
+Periodically check the checksums.
+When there are errors, use the checksums to correct the errors, if possible.
+If it is not possible, use a backup.
+But beware: the backup might have errors as well.
+Even the checksums themselves might have errors.
+Before we explain our strategy, here is an example that it actually works.</p>
+<p><strong>1. original</strong></p>
+<a class="reference internal image-reference" href="_images/Dirk-orig.jpg"><img alt="_images/Dirk-orig.jpg" src="_images/Dirk-orig.jpg" style="width: 200px;" /></a>
+<p>We start with a photo of the author. It is a 436 KB jpeg image. This is indeed the uncorrupted form.</p>
+<p><strong>2. 174 bit errors</strong></p>
+<a class="reference internal image-reference" href="_images/Dirk-174.jpg"><img alt="_images/Dirk-174.jpg" src="_images/Dirk-174.jpg" style="width: 200px;" /></a>
+<p>Now 174 bit errors are added, at random positions</p>
+<p><strong>3. 104 errors in the backup</strong></p>
+<a class="reference internal image-reference" href="_images/Dirk-bu-1041.jpg"><img alt="_images/Dirk-bu-1041.jpg" src="_images/Dirk-bu-1041.jpg" style="width: 200px;" /></a>
+<p>We will also use a backup, but also this one is corrupted: 104 different errors</p>
+<p><strong>4-5. 27 + 16 bit errors in the checksum files</strong></p>
+<img alt="_images/Checksumdiff1.jpg" src="_images/Checksumdiff1.jpg" />
+<p>We also corrupt the checksums: 27 bit errors</p>
+<img alt="_images/Dirk-chk-27.jpg" src="_images/Dirk-chk-27.jpg" />
+<p>and the checksums of the backup are not spared either: 16 bit errors</p>
+<img alt="_images/Dirk-bu-chk-16.jpg" src="_images/Dirk-bu-chk-16.jpg" />
+<p><strong>6. checking the corrupt image with the corrupt checksums</strong></p>
+<p>we get 163 damaged blocks</p>
+<img alt="_images/Checksumerrors.jpg" src="_images/Checksumerrors.jpg" />
+<p><strong>7. after repairing 138 and leaving 25 bit errors</strong></p>
+<a class="reference internal image-reference" href="_images/Dirk-25.jpg"><img alt="_images/Dirk-25.jpg" src="_images/Dirk-25.jpg" style="width: 200px;" /></a>
+<p>First we try to repair without using the backup, we can repair the majority of damaged blocks, 138.
+But 25 remain unrepaired.
+See the result.</p>
+<img alt="_images/Repairresults.jpg" src="_images/Repairresults.jpg" />
+<p><strong>8. We need to use the backup</strong></p>
+<p>Let us again check the checksums. 50 damaged blocks!
+But remember that the checksums themselves were faulty!</p>
+<img alt="_images/Recheck.jpg" src="_images/Recheck.jpg" />
+<p><strong>9. fully restored, thank you</strong></p>
+<a class="reference internal image-reference" href="_images/Dirk-restored.jpg"><img alt="_images/Dirk-restored.jpg" src="_images/Dirk-restored.jpg" style="width: 200px;" /></a>
+<p>Yet, by a combination of restoring and repairing it is effectively possible to correct all errors.</p>
+<img alt="_images/Restoreresults.jpg" src="_images/Restoreresults.jpg" />
+<p><strong>10. There are absolutely no errors left</strong></p>
+<img alt="_images/Diff.jpg" src="_images/Diff.jpg" />
+</div>
+<div class="section" id="account">
+<h2>Account<a class="headerlink" href="#account" title="Permalink to this headline">¶</a></h2>
+<p>This story I wrote on Good Friday, 2013-03-29.
+All data and screenshots were directly taken from the computer when I executed the process as described above.
+By the way, that was a Macbook Air, and the whole process is expressed in a Perl script, which only uses the module Digest:MD5.
+Both Perl and this module are already present in OSX.</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<p>After that, I have tested extensively.
+The code for this lab is in <a class="reference external" href="https://github.com/dirkroorda/bit-recover">Github</a>.
+It is a tool for checksumming files in such a way that you can recover from errors.
+It also does the recovering.
+Besides, it is an environment to test various checksumming algorithms and parameters to see what performs best.
+You find also test data of a few doen experiments, summarized in an <a class="reference external" href="https://www.dropbox.com/s/9ehvdads8pmbanf/summary.xlsx">excel document</a>.
+The code is here (Perl).</p>
 <p>There is a program for checksumming files, verifying, repairing and restoring: <em>checksum.pl</em>.</p>
-<p>Then there is a setup to do experiments: <em>perfset.pl</em> creates a pool of corrupt file and organizes tests of various checksum methods.</p>
+<p>Then there is a setup to do experiments: <a class="reference internal" href="perfset.html#perfset-pl"><em>perfset.pl</em></a> creates a pool of corrupt file and organizes tests of various checksum methods.</p>
 <p>The question is: wich checksum methods <em>perform</em> best in the brute force search for the original byte sequence?</p>
-<p>In order to make file corrupt, you can run <em>corrupt.pl</em> with a variety of parameters.</p>
-<p>To gather the results of a series of experiments, use <em>gather.pl</em>. It creates a csv file, that you can use to create nice graphics
+<p>In order to make file corrupt, you can run <a class="reference internal" href="corrupt.html#corrupt-pl"><em>corrupt.pl</em></a> with a variety of parameters.</p>
+<p>To gather the results of a series of experiments, use <a class="reference internal" href="gather.html#gather-pl"><em>gather.pl</em></a>. It creates a csv file, that you can use to create nice graphics
 in a spreadsheet program.</p>
+</div>
 </div>
 
 
@@ -68,6 +131,16 @@ in a spreadsheet program.</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">ABOUT</a><ul>
+<li><a class="reference internal" href="#data-in-various-stages-of-decay-and-salvation">Data in various stages of decay and salvation</a></li>
+<li><a class="reference internal" href="#account">Account</a></li>
+<li><a class="reference internal" href="#contents">Contents</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="index.html"
                         title="previous chapter">bit-recover documentation</a></p>
