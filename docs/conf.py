@@ -54,21 +54,21 @@ latex_elements = {
 }
 
 latex_documents = [
-  ('index', 'Bit Recovery.tex', u'Bit Recovery Documentation',
+  ('index', 'Bit_Recovery.tex', u'Bit Recovery Documentation',
    u'Dirk Roorda', 'manual'),
 ]
 
 # -- Options for manual page output ---------------------------------------
 
 man_pages = [
-    ('index', 'Bit Recovery', u'Bit Recovery Documentation',
+    ('index', 'Bit_Recovery', u'Bit Recovery Documentation',
      [u'Dirk Roorda'], 1)
 ]
 
 # -- Options for Texinfo output -------------------------------------------
 
 texinfo_documents = [
-  ('index', 'Bit Recovery', u'Bit Recovery Documentation',
+  ('index', 'Bit_Recovery', u'Bit Recovery Documentation',
    u'Dirk Roorda', 'Bit Recovery', 'One line description of project.',
    'Miscellaneous'),
 ]
@@ -79,7 +79,7 @@ epub_title = u'Bit Recovery'
 epub_author = u'Dirk Roorda'
 epub_publisher = u'Dirk Roorda'
 epub_copyright = u'2013, Dirk Roorda'
-epub_basename = u'Bit Recovery'
+epub_basename = u'Bit_Recovery'
 epub_theme = 'epub'
 epub_show_urls = 'footnote'
 epub_use_index = True
