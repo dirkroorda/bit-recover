@@ -1,5 +1,5 @@
-bit-recover documentation
-=========================
+bit-recover |version|
+=====================
 .. image:: /files/Dirk-bu-104.jpg
    :width: 200 px
 
