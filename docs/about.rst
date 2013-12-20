@@ -101,7 +101,7 @@ The code for this lab is in `Github <https://github.com/dirkroorda/bit-recover>`
 It is a tool for checksumming files in such a way that you can recover from errors.
 It also does the recovering.
 Besides, it is an environment to test various checksumming algorithms and parameters to see what performs best.
-You find also test data of a few doen experiments, summarized in an `excel document <https://www.dropbox.com/s/9ehvdads8pmbanf/summary.xlsx>`_.
+You find also test data of a few dozen experiments, summarized in an `excel document <https://www.dropbox.com/s/9ehvdads8pmbanf/summary.xlsx>`_.
 The code is here (Perl).
 
 There is a program for checksumming files, verifying, repairing and restoring: *checksum.pl*.
