@@ -98,6 +98,9 @@ Contents
 ========
 After that, I have tested extensively.
 The code for this lab is in `Github <https://github.com/dirkroorda/bit-recover>`_.
+
+The report I published on `Figshare <http://dx.doi.org/10.6084/m9.figshare.903698>`_.
+
 It is a tool for checksumming files in such a way that you can recover from errors.
 It also does the recovering.
 Besides, it is an environment to test various checksumming algorithms and parameters to see what performs best.

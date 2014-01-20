@@ -13,7 +13,10 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
+    'sphinx.ext.intersphinx',
 ]
+
+intersphinx_mapping = {'python': ('http://docs.python.org/3.3', None)}
 
 templates_path = ['_templates']
 source_suffix = '.rst'
@@ -21,7 +24,7 @@ master_doc = 'index'
 project = u'Bit Recovery'
 copyright = u'2013, Dirk Roorda'
 version = '1.2'
-release = '1.2.1'
+release = '1.2.2'
 exclude_patterns = ['_build']
 add_function_parentheses = True
 add_module_names = False
@@ -69,7 +72,7 @@ man_pages = [
 
 texinfo_documents = [
   ('index', 'Bit_Recovery', u'Bit Recovery Documentation',
-   u'Dirk Roorda', 'Bit Recovery', 'One line description of project.',
+   u'Dirk Roorda', 'Bit Recovery', 'One line description of project_name.',
    'Miscellaneous'),
 ]
 
