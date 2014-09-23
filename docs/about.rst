@@ -97,7 +97,7 @@ Both Perl and this module are already present in OSX.
 Contents
 ========
 After that, I have tested extensively.
-The code for this lab is in `Github <https://github.com/dirkroorda/bit-recover>`_.
+The code for this lab is in `Github <https://github.com/Dans-labs/bit-recover>`_.
 
 The report I published on `Figshare <http://dx.doi.org/10.6084/m9.figshare.903698>`_.
 
@@ -105,7 +105,7 @@ It is a tool for checksumming files in such a way that you can recover from erro
 It also does the recovering.
 Besides, it is an environment to test various checksumming algorithms and parameters to see what performs best.
 You find also test data of a few dozens of experiments,
-summarized in an `excel document <https://github.com/dirkroorda/bit-recover/blob/master/experiment/summary.xlsx>`_.
+summarized in an `excel document <https://github.com/Dans-labs/bit-recover/blob/master/experiment/summary.xlsx>`_.
 The code is here (Perl).
 
 There is a program for checksumming files, verifying, repairing and restoring: *checksum.pl*.
