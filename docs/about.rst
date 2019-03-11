@@ -20,30 +20,30 @@ Before we explain our strategy, here is an example that it actually works.
 
 We start with a photo of the author. It is a 436 KB jpeg image. This is indeed the uncorrupted form.
 
-.. image:: /files/Dirk-orig.jpg
+.. image:: /iles/Dirk-orig.jpg
    :width: 200 px
 
 **2. 174 bit errors**
 
 Now 174 bit errors are added, at random positions
 
-.. image:: /files/Dirk-174.jpg
+.. image:: files/Dirk-174.jpg
    :width: 200 px
 
 **3. 104 errors in the backup**
 
 We will also use a backup, but also this one is corrupted: 104 different errors
 
-.. image:: /files/Dirk-bu-104.jpg
+.. image:: files/Dirk-bu-104.jpg
    :width: 200 px
 
 **4-5. 27 + 16 bit errors in the checksum files**
 
 We also corrupt the checksums: 27 bit errors 
 
-.. image:: /files/Dirk-chk-27.jpg
+.. image:: files/Dirk-chk-27.jpg
 
-.. image:: /files/Checksumdiff.jpg
+.. image:: files/Checksumdiff.jpg
 
 and the checksums of the backup are not spared either: 16 bit errors
 
