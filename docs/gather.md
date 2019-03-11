@@ -1,20 +1,21 @@
-.. _gather.pl:
+# gather.pl
 
-gather.pl
-#########
-Description
-===========
+## Description
 
 Gather data from experiments
 
-Usage
-=====
+## Usage
+
 Command::
 
-	./gather.pl [-v] [--base reportbasedir]
+```sh
+./gather.pl [-v] [--base reportbasedir]
+```
 
-where ::
+where :
 
+```
 	-v			verbose rsync, if twice: verbose all
 	--base		base directory of the reports
+```
 

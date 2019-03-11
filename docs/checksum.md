@@ -1,9 +1,6 @@
-.. _checksum.pl:
+# checksum.pl
 
-checksum.pl
-###########
-Description
-===========
+## Description
 This tool is an instrument in bit preservation of (large) files.
 It is estimated that if one reads 10 TB from disk, 1 bit will be in error.
 Also, when 1 TB is stored for a year without touching it, some bits might
@@ -27,14 +24,16 @@ It works even when the checksums themselves are corrupt.
 
 It al depends on the damage being not too big.
 
-Usage
-=====
-Call the script like this::
+## Usage
+Call the script like this:
 
-	./checksum.pl [-v] [-m method] [-t task]* [--conf kind=path]* --data kind=path [backupfile] [origfile] [corruptfile]
+```sh
+./checksum.pl [-v] [-m method] [-t task]* [--conf kind=path]* --data kind=path [backupfile] [origfile] [corruptfile]
+```
 
-where ::
+where :
 
+```
 	-v			verbose operation
 	method		key of %config_checksum
 	task		member of:
@@ -55,6 +54,7 @@ where ::
 	data	
 		kind	key of %datafile
 		path	path to a file on the file system
+```
 
 
 This script can generate checksums, verify them, and perform repair and restore from backup.
@@ -69,16 +69,19 @@ all data consists of fixed length strings, 64-bit integers, or fixed-size blocks
 All these files have a header, indicating the checksum method used, as well as the data block size and the
 checksum length.
 
-With arguments like *file:kind=path* you can overrule the locations and names (but not extensions) of all files that are read and written to.
+With arguments like `file:kind=path`
+you can overrule the locations and names (but not extensions) of all files that are read and written to.
 The kind part must occur as key in the *%files* hash.
 
-Generating
-==========
-Command::
+## Generating
 
-	./checksum.pl file
+Command:
 
-Generates checksums for (large) files, block by block. The size of a block is configured to 1_000 bytes.
+```sh
+./checksum.pl file
+```
+
+Generates checksums for (large) files, block by block. The size of a block is configured to 1000 bytes.
 The main reason to keep it fairly small is to be able to do brute force guessing when a checksum is found not
 to agree anymore with a datablock.
 
@@ -88,11 +91,13 @@ back.
 
 The file with checksums has the same name as the input file, but with *.chk* appended to it. 
 
-Verifying
-=========
-Command::
+## Verifying
 
-	./checksum.pl -v file
+Command:
+
+```sh
+./checksum.pl -v file
+```
 
 Verifies given checksums. It expects next to the input file a *file.chk* with checksums, in the format indicated
 above. It then extracts from file each block as specified in *file.chk*, computes its checksum and compares it 
@@ -104,11 +109,13 @@ Such a record consists of just the block number, the given checksum, and the com
 
 If there are no errors, the *file.x* will not be present. If it existed, it will be deleted.
 
-Repairing
-=========
-Command::
+## Repairing
 
-	./checksum.pl -c file
+Command:
+
+```sh
+./checksum.pl -c file
+```
 
 Looks at checksum mismatches. In every case, modifies checksum and corresponding blocks in many small ways,
 until the combination matches again. Both block and checksum are dithered.
@@ -124,11 +131,13 @@ The program will give clear warnings in these cases.
 
 The repair instructions are written to *file.ri*
 
-Restoring
-=========
-Command::
+## Restoring
 
-	./checksum.pl -r[a|A] file file-backup
+Command:
+
+```sh
+./checksum.pl -r[a|A] file file-backup
+```
 
 Compares blocks and checksums of data and backup. The bit positions where they differ, will be varied among all
 possibilities. The checksums are stored in a hash for easy lookup. Then the blocks will be generated on the fly.
@@ -140,22 +149,26 @@ If called with -ra both the blocks for which repair found multiple hits and no h
 
 The restore instructions are written *file.rib*
 
-Executing
-=========
-Commands::
+## Executing
 
-	./checksum.pl -ec file
-	./checksum.pl -er file
+Commands:
+
+```sh
+./checksum.pl -ec file
+./checksum.pl -er file
+```
 
 Executes the repair resp. restore instructions in *file.ri* resp. *file.rib*
 All information needed from the backup file is already in the instruction file, so the backup file itself is not 
 needed here. The work has been done in the previous steps, this step only performs the write actions in the file.
 
-Diagnostics
-===========
-Command::
+## Diagnostics
 
-	./checksum.pl -dia file backupfile origfile corruptfile
+Command:
+
+```sh
+./checksum.pl -dia file backupfile origfile corruptfile
+```
 
 Creates a diagnostic report of the repair and restore instructions. It takes as second argument the backup file and as 
 third argument the original file and as fourth argument the unrestored/unrepaired corrupted file.
@@ -163,22 +176,24 @@ It gives all info about the blocks which have not been restored correctly.
 On the basis of this information it shows which instructions helped to correctly get the original back,
 and which instructions were faulty.
 
-Author
-======
+## Author
+
 Dirk Roorda,
-`Data Archiving and Networked Services (DANS) <http://www.dans.knaw.nl/en>`_
+[Data Archiving and Networked Services (DANS)](https://www.dans.knaw.nl)
+
 2013-03-29
 dirk.roorda@dans.knaw.nl
 
-See also `DANS Lab Bit rot and recovery <http://demo.datanetworkservice.nl/mediawiki/index.php/Bit_Rot_and_Recovery>`_
+See also [DANS Lab Bit rot and recovery](http://demo.datanetworkservice.nl/mediawiki/index.php/Bit_Rot_and_Recovery)
 
-Configuration
-=============
+## Configuration
 In order to compare performance between md5 and sha256 hashing we provide two standard configurations, which can be
-invoked by the command line flag ``-m``::
+invoked by the command line flag ``-m``:
 
+```
 	-m md5
 	-m sha256
+```
 
 invoke the md5 and the sha256 checksum algorithms respectively.
 The default parameter values for these methods are loaded. It remains possible to overrule these values
@@ -186,17 +201,16 @@ by means of additional flags on the command line.
 
 The default checksum mode is sha256. 
 
-Implementation details
-======================
-Looking for hits
-----------------
+## Implementation details
+
+### Looking for hits
 When measuring how close a "hit" is to the actual situation, the number of different bits in the checksums
 and in the blocks are counted. However, differences in the checksum count much more than differences in the blocks.
 
 Bit differences in the checksums are far less probable than bit differences in the blocks, because blocks are larger. 
 Moreover, if checksums are very different, it is an indication of tampering: a new checksum has been computed for a slightly altered block.
-So by default we multiply the checksum bit distance by the $data_checksum_ration.
-In addition, you can configure to increase or decrease this effect by multiplying with the $check_diff_penalty which is by default 1.
+So by default we multiply the checksum bit distance by the `$data_checksum_ration`.
+In addition, you can configure to increase or decrease this effect by multiplying with the `$check_diff_penalty` which is by default 1.
 
 We compare hits with the foreground file, not with the backup.
 We want a hit that is closest to the foreground, since the foreground has been always under our control, and the backup has been far less in our control.
@@ -204,22 +218,25 @@ We want a hit that is closest to the foreground, since the foreground has been a
 We want to keep the search effort constant for the different checksum methods. Depending on the blocksize determined by the checksum method, we can
 set the search parameters in such a way that the prescribed number of search operations will be used.
 
-Binary files and headers
-------------------------
+### Binary files and headers
 Every binary non-data file we read, is a file generated by this program. Such a file has a header.
 It will be read and written by the following two functions.
-It has the format::
+It has the format:
 
+```
 	a8 a8 L L L L
+```
 
-where::
+where:
 
+```
 	a8 is arbitrary binary data of 8 bytes. Reserved for a string indicating the checksum method
 	a8 is arbitrary binary data of 8 bytes. Reserved for a string indicating the checksum method
 	L is a long integer (32 bits = 4 bytes), indicating the checksum size
 	L is a long integer (32 bits = 4 bytes), indicating the checksum size
 	L is a long integer (32 bits = 4 bytes), indicating the block size
 	L is a long integer (32 bits = 4 bytes), indicating the block size
+```
 
 All together the header is 32 bytes = 256 bits
 
@@ -228,24 +245,24 @@ If one of them does not appear a power of two, choose the other. If both are not
 If both are powers of two but different, we are also stuck.
 Likewise, we choose between the values encountered for the checksummethod.
 
-Reading and Writing files
--------------------------
+### Reading and Writing files
+
 Opens files for reading, writing, and read-writing.
 Uses the specification created in the init() function.
 Returns a file handle in case of succes.
 The file handle is meant to be stored in global variables.
 So more than one routine can easily read and write the same file.
 
-Repair block
-------------
+### Repair block
+
 This function implements a main step: Repair a single block
 We apply ditherings progressively, in rounds corresponding to the frame length n of the dithering.
 We start with n = 0, then n = 1 and so on.
 So the smaller disturbances will be checked first, and we assume that bigger disturbances do not compete with smaller ones.
 If there are hits in a round, the next rounds will be skipped.
 
-Restore block
--------------
+### Restore block
+
 now generate the set by creating all possible bit values at the positions where $str1 and $str2 differ 
 in order to optimize the search process, we want to search in such a way that we do cases first where bits are taken
 consecutively from the data version or the backup version.
@@ -257,8 +274,8 @@ This will increase the change of finding a good restore.
 So we generate all possibile bit strings for the difference mask. We will xor the bits in the mask with the corresponding bits in the data.
 So we should try bitstrings first with minimal alterations between 1s and 0s.
 
-Dithering
----------
+### Dithering
+
 This is the technique used for repairing blocks.
 
 Dithering is subtly mangling a bit string, by introducing a limitied amount of bit errors.
@@ -281,8 +298,8 @@ This is precisely because the end points are always one, and the endpoints chang
 
 So the number of ditherings with frame length <= n is:  2 ^ (n-1) 
 
-Masking
--------
+### Masking
+
 This is the technique used for restoring blocks.
 When the corresponding block from the backup is fetched, and we have the data block,
 then in the most general case we do not know which block is right.
