@@ -176,13 +176,12 @@ It gives all info about the blocks which have not been restored correctly.
 On the basis of this information it shows which instructions helped to correctly get the original back,
 and which instructions were faulty.
 
-## Author
+# Author
 
-Dirk Roorda,
+[Dirk Roorda](https://github.com/dirkroorda) -
 [Data Archiving and Networked Services (DANS)](https://www.dans.knaw.nl)
 
 2013-03-29
-dirk.roorda@dans.knaw.nl
 
 See also [DANS Lab Bit rot and recovery](http://demo.datanetworkservice.nl/mediawiki/index.php/Bit_Rot_and_Recovery)
 
